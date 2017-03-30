@@ -4,4 +4,5 @@ project(packet_forwarder)
 
 add_subdirectory(lora_pkt_fwd)
 add_subdirectory(util_ack)
+add_subdirectory(util_sink)
 add_subdirectory(util_tx_test)
