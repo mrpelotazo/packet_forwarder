@@ -3,9 +3,7 @@ cmake_minimum_required(VERSION 3.2)
 project(lora_pkt_fwd)
 include(GNUInstallDirs)
 
-find_package(libloragw REQUIRED
-		#	PATHS "/mnt/data/projects/private/lorawan/install/lib64/cmake"
-)
+find_package(libloragw REQUIRED)
 find_package(Threads REQUIRED)
 
 #-----------------------------------------------------------------------------
