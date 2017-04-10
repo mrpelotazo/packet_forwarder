@@ -28,14 +28,13 @@ set_target_properties(pktfwd PROPERTIES OUTPUT_NAME lora_pkt_fwd)
 #-----------------------------------------------------------------------------
 # pktfwd includes
 #-----------------------------------------------------------------------------
-target_include_directories(pktfwd PUBLIC
+target_include_directories(pktfwd PRIVATE
 	${PROJECT_SOURCE_DIR}/inc
 )
 
 #-----------------------------------------------------------------------------
 # pktfwd linking
 #-----------------------------------------------------------------------------
-
 target_link_libraries(pktfwd PRIVATE loragw Threads::Threads m)
 
 #-----------------------------------------------------------------------------
