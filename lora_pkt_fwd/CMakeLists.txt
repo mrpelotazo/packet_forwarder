@@ -20,6 +20,11 @@ set(PKTFWD_VERSION   "${LIBLORAGW_VERSION_MAJOR}.${LIBLORAGW_VERSION_MINOR}.${LI
 file(GLOB PKTFWD_SOURCES ${PROJECT_SOURCE_DIR}/src/*)
 
 #-----------------------------------------------------------------------------
+# pktfwd runtime config files
+#-----------------------------------------------------------------------------
+file(GLOB PKTFWD_RCONFIGS ${PROJECT_SOURCE_DIR}/*.json)
+
+#-----------------------------------------------------------------------------
 # pktfwd target
 #-----------------------------------------------------------------------------
 add_executable(pktfwd ${PKTFWD_SOURCES})
@@ -41,3 +46,4 @@ target_link_libraries(pktfwd PRIVATE loragw Threads::Threads m)
 # install targets
 #-----------------------------------------------------------------------------
 install(TARGETS pktfwd DESTINATION ${CMAKE_INSTALL_BINDIR})
+install(FILES ${PKTFWD_RCONFIGS} DESTINATION opt/lora/semtech)
