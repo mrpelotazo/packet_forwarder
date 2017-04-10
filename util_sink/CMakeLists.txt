@@ -24,4 +24,4 @@ target_include_directories(utlsnk PRIVATE
 #-----------------------------------------------------------------------------
 # install targets
 #-----------------------------------------------------------------------------
-install(TARGETS utlsnk DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})
+install(TARGETS utlsnk DESTINATION opt/semtech)
