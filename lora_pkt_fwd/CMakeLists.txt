@@ -41,4 +41,4 @@ target_link_libraries(pktfwd PRIVATE loragw Threads::Threads m)
 #-----------------------------------------------------------------------------
 # install targets
 #-----------------------------------------------------------------------------
-install(TARGETS pktfwd DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})
+install(TARGETS pktfwd DESTINATION ${CMAKE_INSTALL_BINDIR})
