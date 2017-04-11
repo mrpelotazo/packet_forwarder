@@ -45,5 +45,5 @@ target_link_libraries(pktfwd PRIVATE loragw Threads::Threads m)
 #-----------------------------------------------------------------------------
 # install targets
 #-----------------------------------------------------------------------------
-install(TARGETS pktfwd DESTINATION opt/semtech)
-install(FILES ${PKTFWD_RCONFIGS} DESTINATION opt/semtech)
+install(TARGETS pktfwd DESTINATION ${CMAKE_INSTALL_PREFIX})
+install(FILES ${PKTFWD_RCONFIGS} DESTINATION ${CMAKE_INSTALL_PREFIX})

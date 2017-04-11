@@ -24,4 +24,4 @@ target_include_directories(utlack PRIVATE
 #-----------------------------------------------------------------------------
 # install targets
 #-----------------------------------------------------------------------------
-install(TARGETS utlack DESTINATION opt/semtech)
+install(TARGETS utlack DESTINATION ${CMAKE_INSTALL_PREFIX})
